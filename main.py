@@ -60,6 +60,10 @@ for vec in vecs_array:
         'words' : words_album,
         'vector' : vector_album
     }))
+#draw wordcloud per album
+for i,album in enumerate(albums):
+    fig_title = cd_num_name_dict[artist_df.CD_Number.unique().tolist()[i]]
+    functions.draw_wordcloud(album,'words','vector',fig_title,MASKING_MODE, COLOR_MODE, MASK_TELE, FONT)
 
 #draw wordcloud all songs words freq
 word_list = functions.get_word_list(artist_df.Lyric.tolist(), NEOLOGD)                    
