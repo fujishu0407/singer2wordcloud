@@ -8,7 +8,7 @@ config = configparser.ConfigParser()
 config.read('setting.ini')
 NEOLOGD = "-Ochasen -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd"
 FONT = "/System/Library/Fonts/ヒラギノ角ゴシック W3.ttc"
-MASK_TELE = "./src/Quote_white.png"
+MASK_TELE = "./src/apple.png"
 singer_url = 'https://www.uta-net.com/artist/24024/'#須田景凪
 #singer_url = 'https://www.uta-net.com/artist/22653/'#ヨルシカ
 #singer_url = 'https://www.uta-net.com/artist/12795/'#米津
@@ -27,6 +27,7 @@ cd_num_name_dict = {
     "：DUED-123" : "Quote",
     "：WPCL-130" : "porte",
     "：WPCL-129" : "teeter",
+    "：WPCL-132" : "Billow",
     "" : "not album",
 }
 
